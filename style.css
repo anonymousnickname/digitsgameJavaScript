@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background: rgb(146, 146, 145);
+    background: linear-gradient(90deg, rgb(173, 173, 138) 0%,
+               rgb(189, 189, 189) 50%rgb(92, 84, 89)1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.none {
+    pointer-events:none;
+}
+
+.s1 {
+    color: blue;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.s2{
+    color: rgb(22, 22, 18);
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.s3{
+    color: rgb(0, 255, 98);
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.s4{
+    color: rgb(255, 251, 0);
+    font-size: 23px;
+    font-family: fantasy;
+}
+
+.s5 {
+    color: rgb(255, 0, 0);
+    font-size: 26px;
+    font-family: cursive;
+}
+
+.s6{
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.s7{
+    color: rgb(255, 0, 191);
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.s8{
+    color: rgb(0, 255, 221);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.s9 {
+    color: rgb(255, 72, 163);
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.s10{
+    color: rgb(25, 0, 255);
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.s11{
+    color: rgb(0, 255, 98);
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.s12{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.s13{
+    color: rgb(255, 52, 52);
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* INITIALIZATION OG GAME */
+.wrapper-init-game {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-init-game, .level {
+	box-shadow:inset 1px 0px 0px 0px #b926be ;
+	background:linear-gradient(to bottom, #b926be 5%, #d34215 100%);
+	background-color:#9627a0;
+	border-radius:32px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:23px;
+	font-weight:bold;
+	padding:15px 41px;
+	text-decoration:none;
+    text-shadow:0px 0px 11px #8ae8ff;
+    outline: none;
+}
+.button-init-game, .level:hover {
+	background:linear-gradient(to bottom, #c03b12 5%, #7a0b7e 100%);
+	background-color:#e44fe4;
+}
+.button-init-game, .level:active {
+	position:relative;
+	top:1px;
+}
+/* END OF INITIALIZATION */
+
+/* INDICATE NAME*/
+.outer-wrapper-indicate-name {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+   .inner-wrapper-indicate-name{
+    min-width: 50%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+.indicate-name__tittle {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.indicate-name__tittle h2 {
+    font-size: 5em;
+    letter-spacing: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.indicate-name__tittle h2 :first-child {
+    color: yellowgreen;
+}
+
+.indicate-name__tittle h2 :nth-child(2n) {
+    color: rgb(248, 14, 14);
+}
+
+.indicate-name__tittle h2 :nth-child(3n) {
+    color: rgba(0, 38, 255, 0.418);
+}
+
+.indicate-name__tittle h2 :nth-child(4n) {
+    color: yellow;
+}
+
+.indicate-name__tittle h2 :nth-child(5n) {
+    color: rgb(23, 23, 214);
+}
+
+.indicate-name__input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indicate-name__input input {
+    border: none;
+    background: rgb(255, 255, 255, .25);
+    color: white;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin: 0;
+    padding: 16px 21px;
+    border-radius: 4px;
+}
+
+.indicate-name__input input::placeholder {
+    color: white;
+}
+
+/* END OF INDICATE NAME */
+
+/* CHOOSE LEVEL */
+
+.outer-wrapper-choose-level {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-wrapper-choose-level {
+    min-width: 50%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-level__container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level {
+    text-transform: uppercase;
+}
+/* END OF CHOOSE GAME */
+
+
+/* COMMON MENU AND EASY MENU*/
+
+.wrapper-common-menu, .outer-wrapper-hard-menu, .wrapper-easy-menu{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play, .leaderboard, .easyRepeat, .backLevels, .commonRepeat, .hardRepeat {
+	box-shadow: 1px -1px 4px 12px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:20px;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Georgia;
+	font-size:24px;
+	font-weight:bold;
+	padding:18px 45px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #aade7c;
+}
+.play, .leaderboard:hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
+.play, .leaderboard:active {
+	position:relative;
+	top:1px;
+}
+
+/* END OF COMMON MENU AND EASY MENU*/
+
+/* HARD MENU */
+.inner-wrapper-hard-menu {
+    min-width: 50%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hard-menu-play {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hard-menu-leaderboard {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* END OF HARD MENU */
+
+/* EASY PLAY FIELD (GAMEPLAY)*/
+
+.outer-wrapper-easy-play-field{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-wrapper-easy-play-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 50vw;
+    min-height: 80vh;
+}
+
+.easy-play-field__table {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.easy-play-field__buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.easygame{
+    width: 15vw;
+    color: white;
+    height: 15vh;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+table {
+    display: block;
+}
+
+/* END OF EASY PLAY FIELD (GAMEPLAY)*/
+
+/* COMMON PLAY FIELD (GAMEPLAY)*/
+
+.outer-wrapper-common-play-field{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-wrapper-common-play-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 50vw;
+    min-height: 90vh;
+}
+
+.common-play-field__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.common-play-field__time p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight:bold ;
+    font-size: 2em;
+}
+.common-play-field__table {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.common-play-field__buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.common-play-field__table td {
+    width: 15vw;
+    height: 15vh;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+table {
+    display: block;
+}
+
+/* END OF COMMON PLAY FIELD (GAMEPLAY)*/
+
+
+/* HARD PLAY FIELD (GAMEPLAY)*/
+.outer-wrapper-hard-play-field{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-wrapper-hard-play-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 50vw;
+    min-height: 90vh;
+}
+
+.hard-play-field__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.hard-play-field__time p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight:bold ;
+    font-size: 2em;
+}
+.hard-play-field__table {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hard-play-field__buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.hard-play-field__table td {
+    width: 13vw;
+    height: 13vh;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+table {
+    display: block;
+}
+/* END OF HARD PLAY FIELD (GAMEPLAY)*/
+
+/* Leaderboard */
+
+.outer-wrapper-leaderboard{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-wrapper-leaderboard {
+    display: flex;
+    flex-direction: column;
+    min-width: 50vw;
+    min-height: 90vh;
+}
+
+.leaderboard__tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight:bold ;
+    font-size: 3em;
+    flex: 1;
+}
+
+.leaderboard__result {
+    flex: 6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.leaderboard__result__button {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaderboard-ol-names {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.leaderboard-ul-time{
+    flex: 1;
+    text-align: center;
+}
+
+.leaderboard-ul-time ul {
+    list-style-type: none;
+}
+
+.checkColor {
+    background: rgb(94, 255, 0);
+}

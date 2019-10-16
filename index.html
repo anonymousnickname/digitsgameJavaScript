@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Init game -->
+<div class="wrapper-init-game">
+    <a href="#" class="button-init-game" id="button-init-game">START</a>
+</div>
+    <!-- !-!-! -->
+
+    <!-- Indicate name -->
+<div class="outer-wrapper-indicate-name" id="outer-wrapper-indicate-name">
+        <div class="inner-wrapper-indicate-name">
+            <div class="indicate-name__tittle">
+                <h2>
+                    <span>N</span>
+                    <span>A</span>
+                    <span>M</span>
+                    <span>E</span>
+                    <span>:</span>
+                </h2>
+            </div>
+            <div class="indicate-name__input">
+                <input type="text"  id="indicate-name__input" placeholder="Enter your name:">
+            </div>
+        </div>
+</div>
+<!-- !-!-! -->
+
+<!-- Choose level -->
+<div class="outer-wrapper-choose-level" id="outer-wrapper-choose-level">
+        <div class="inner-wrapper-choose-level">
+            <div class="choose-level__container">
+                    <button id="levelEasy" class="level">Easy</button>
+            </div>
+            <div class="choose-level__container">
+                    <button id="levelNormal" class="level">Normal</button>
+            </div>
+            <div class="choose-level__container">
+                    <button id="levelHard" class="level">Hard</button>
+            </div>
+        </div>
+</div>
+<!-- !-!-! -->
+<!-- Easy menu -->
+<div class="wrapper-easy-menu" id="wrapper-easy-menu">
+        <a href="#" id="playEasy" class="play">PLAY</a>
+</div>
+<!-- !-!-! -->
+
+<!-- Common menu -->
+<div class="wrapper-common-menu" id="wrapper-common-menu">
+            <a href="#" id="playCommon" class="play">PLAY</a>
+</div>
+<!-- !-!-! -->
+
+<!-- Hard menu -->
+<div class="outer-wrapper-hard-menu" id="outer-wrapper-hard-menu">
+    <div class="inner-wrapper-hard-menu">
+        <div class="hard-menu-play">
+                <a href="#" id="playHard" class="play">PLAY</a>
+        </div>
+        <div class="hard-menu-leaderboard">
+                <a href="#" id="leaderboard" class="leaderboard">LEADERBOARD</a>
+        </div>
+
+        <div class="hard-menu-leaderboard">
+                <a href="#" id="backFromLeaderBoardToMenu" class="play">BACK</a>
+        </div>
+    </div>
+</div>
+<!-- !-!-! -->
+
+<!-- Easy play field -->
+<div class="outer-wrapper-easy-play-field" id="outer-wrapper-easy-play-field">
+        <div class="inner-wrapper-easy-play-field">
+            <div class="easy-play-field__table" id="easy-play-field__table"></div>
+            <div class="easy-play-field__buttons">
+                    <a href="#" id="backLevelsFromEasy" class="backLevels">Back</a>
+                    <a href="#" id="easyRepeat" class="easyRepeat">Repeat</a>
+            </div>
+        </div>
+</div>
+<!-- !-!-! -->
+
+<!-- Common play field -->
+<div class="outer-wrapper-common-play-field" id="outer-wrapper-common-play-field">
+        <div class="inner-wrapper-common-play-field">
+            <div class="common-play-field__time">
+                <p id="tittleTimeCommon">Remains only: <span id="time_common"></span> seconds</p>
+            </div>
+            <div class="common-play-field__table" id="common-play-field__table"></div>
+            <div class="common-play-field__buttons">
+                    <a href="#" id="backLevelsFromCommon" class="backLevels">Back</a>
+                    <a href="#" id="commonRepeat" class="commonRepeat">Repeat</a>
+            </div>
+        </div>
+</div>
+<!-- !-!-! -->
+
+<!-- Hard play field -->
+<div class="outer-wrapper-hard-play-field" id="outer-wrapper-hard-play-field">
+        <div class="inner-wrapper-hard-play-field">
+            <div class="hard-play-field__time">
+                <p id="tittleTimeHard">Your time: <span id="time_hard"></span></p>
+            </div>
+            <div class="hard-play-field__table" id="hard-play-field__table"></div>
+            <div class="hard-play-field__buttons">
+                    <a href="#" id="backLevelsFromHard" class="backLevels">Back</a>
+                    <a href="#" id="hardRepeat" class="hardRepeat">Repeat</a>
+            </div>
+        </div>
+</div>
+<!-- !-!-! -->
+
+<div class="outer-wrapper-leaderboard" id="outer-wrapper-leaderboard">
+        <div class="inner-wrapper-leaderboard">
+                <div class="leaderboard__tittle">
+                    <h1>LEADERBOARD:</h1>
+                </div>
+                <div class="leaderboard__result">
+                    <div class="leaderboard-ol-names">
+                        <ol id="leaderboard__result__name">
+                        </ol></div>
+                    <div class="leaderboard-ul-time">
+                        <ul id="leaderboard__result__time"></ul>
+                    </div>
+                </div>
+                <div class="leaderboard__result__button">
+                        <a href="#" id="backLevelsFromLeaderboard" class="backLevels">Back</a>
+                </div>
+        </div>
+</div>
+
+
+</body>
+</html>
